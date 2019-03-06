@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 public class PlayingCat {
     public static boolean isCatPlaying(boolean summer, int temperature) {

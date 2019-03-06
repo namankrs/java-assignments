@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 public class Factorial {
     public static void main(String[] args) {

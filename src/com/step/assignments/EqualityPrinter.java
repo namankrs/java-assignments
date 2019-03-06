@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 public class EqualityPrinter {
     public static void printEqual(int a, int b, int c) {

@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 import java.util.Arrays;
 

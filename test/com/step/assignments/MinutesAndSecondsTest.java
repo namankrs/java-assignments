@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

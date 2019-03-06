@@ -1,4 +1,4 @@
-package assignments;
+package com.step.assignments;
 
 public class MinutesToYearsAndDaysCalculator {
     public static void printYearsAndDays(long minutes){
