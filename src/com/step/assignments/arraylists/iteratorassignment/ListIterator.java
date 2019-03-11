@@ -17,17 +17,17 @@ public class ListIterator {
 
     public ListIterator(List<Integer> list) {
         this.list = list;
-        this.index = 0;
+        this.index = -1;
     }
 
     public boolean hasNext(){
-        if(index>(list.size()-1)) return false;
-        return true;
+        return (index<=(list.size()-2)) ;
+
     }
 
     public int next(){
         if(this.hasNext()) {
-            return list.get(index++);
+            return list.get(++index);
         }
         throw new NoSuchElementException("nhi hai");
     }
