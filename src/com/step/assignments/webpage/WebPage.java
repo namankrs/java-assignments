@@ -1,6 +1,6 @@
 package com.step.assignments.webpage;
 
-public  class WebPage implements IConsole, IPDFpage {
+public  class WebPage extends PDFpage implements Consolable  {
     private String content;
 
     public WebPage(String content) {

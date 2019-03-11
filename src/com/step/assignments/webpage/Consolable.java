@@ -1,5 +1,5 @@
 package com.step.assignments.webpage;
 
-public interface IConsole {
+public interface Consolable {
     public void display(String text);
 }
