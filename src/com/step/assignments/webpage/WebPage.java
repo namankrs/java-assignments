@@ -1,6 +1,6 @@
 package com.step.assignments.webpage;
 
-public  class WebPage extends PDFpage implements Consolable  {
+public  class WebPage implements Displayable,Renderable  {
     private String content;
 
     public WebPage(String content) {
@@ -8,13 +8,13 @@ public  class WebPage extends PDFpage implements Consolable  {
     }
 
 
-    @Override
+
     public void display(String text) {
         System.out.println(text);
 
     }
 
-    @Override
+
     public String getContent() {
         return this.content;
     }
