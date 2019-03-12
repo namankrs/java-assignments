@@ -1,15 +1,17 @@
 package com.step.assignments.unocards;
 
-public class UnoCard implements Dublicable<UnoCard> {
-    private String name;
+public class UnoCard implements Dublicable<DuplicateUnoCard> {
+    private int number;
+    private String color;
 
-    public UnoCard(String name) {
-        this.name = name;
+    public UnoCard(int number, String color) {
+        this.number = number;
+        this.color = color;
     }
 
     @Override
-    public UnoCard getDuplicate() {
-        return new UnoCard(this.name);
+    public DuplicateUnoCard getDuplicate() {
+        return new DuplicateUnoCard(this.number,this.color);
     }
 
 

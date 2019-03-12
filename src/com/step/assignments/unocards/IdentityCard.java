@@ -1,14 +1,17 @@
 package com.step.assignments.unocards;
 
-public class IdentityCard implements Dublicable {
+public class IdentityCard implements Dublicable<DuplicateIdentityCard> {
     private String name;
+    private int id;
 
-    public IdentityCard(String name) {
+    public IdentityCard(String name, int id) {
         this.name = name;
+        this.id = id;
     }
 
+
     @Override
-    public Object getDuplicate() {
-        return new IdentityCard(name);
+    public DuplicateIdentityCard getDuplicate() {
+        return null;
     }
 }
