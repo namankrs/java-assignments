@@ -1,5 +1,5 @@
 package com.step.assignments.unocards;
 
-public interface Dublicable<T> {
+public interface Duplicable<T> {
     T getDuplicate();
 }

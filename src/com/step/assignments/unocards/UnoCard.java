@@ -1,6 +1,6 @@
 package com.step.assignments.unocards;
 
-public class UnoCard implements Dublicable<DuplicateUnoCard> {
+public class UnoCard implements Duplicable<DuplicateUnoCard> {
     private int number;
     private String color;
 
