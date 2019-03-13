@@ -19,7 +19,7 @@ public class Main {
         Set intersection = SetOperations.intersection(set1, set2);
 
         //implemented static methods in setOperations,so commented this part.
-        
+
 //        Set<Integer> union = setOperations.union(set1, set2);
 //        Set<Integer> intersection = setOperations.intersection(set1, set2);
 //        Set<Integer> difference = setOperations.difference(set1, set2);
