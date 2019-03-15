@@ -5,16 +5,19 @@ import java.util.ArrayList;
 public class Contacts {
     private ArrayList<String> contacts = new ArrayList<String>();
 
-    public void addContact(String contact) {
+    public boolean addContact(String contact)
+    {
         contacts.add(contact);
+        return true;
     }
 
-    public void deleteContact(String contact) {
+    public boolean deleteContact(String contact) {
         if (contacts.contains(contact)){
             contacts.remove(contact);
-            return;
+            return true;
         }
         System.out.println("Name not present");
+        return false;
     }
 
     public void modifyContact(String oldContact, String newContact) {

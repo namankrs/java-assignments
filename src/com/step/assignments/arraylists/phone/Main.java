@@ -2,7 +2,7 @@ package com.step.assignments.arraylists.phone;
 
 import java.util.Scanner;
 
-public class MobilePhone {
+public class Main {
     private static Contacts contacts = new Contacts();
     private static Scanner scanner = new Scanner(System.in);
 
