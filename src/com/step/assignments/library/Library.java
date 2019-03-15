@@ -22,18 +22,18 @@ public class Library {
     }
 
     public boolean addBook(String book, String librarian) {
-        if (isLibrarian(librarian)) return false;
+        if (isNotLibrarian(librarian)) return false;
         return books.add(book);
 
     }
 
     public boolean removeBook(String book, String librarian) {
-        if (isLibrarian(librarian) || !this.books.contains(book)) return false;
+        if (isNotLibrarian(librarian) || !this.books.contains(book)) return false;
         this.books.remove(book);
         return this.removedBooks.add(book);
     }
 
-    private boolean isLibrarian(String librarian) {
+    private boolean isNotLibrarian(String librarian) {
         return !this.librarian.equals(librarian);
     }
 
