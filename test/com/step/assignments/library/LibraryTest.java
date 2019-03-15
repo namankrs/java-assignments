@@ -3,9 +3,10 @@ package com.step.assignments.library;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -66,7 +67,7 @@ class LibraryTest {
 
     @Test
     void CheckIfBookIsBorrowedShouldReturnTrueForABorrowedBook() {
-        boolean actualOutput = library.HaveIBorrowed("firstBook", firstReader);
+        boolean actualOutput = library.haveIBorrowed("firstBook", firstReader);
     }
 
     @Test
@@ -78,20 +79,21 @@ class LibraryTest {
 
     @Test
     void getBorrowedBooksShouldReturnBooksOfAReader() {
-        ArrayList<String> actualOuput = library.getBorrowedBooks(firstReader);
-        List<String> expectedOutput = Arrays.asList("firstBook");
+        Set<String> actualOuput =  library.getBorrowedBooks(firstReader);
+        Set<String> expectedOutput = new HashSet<String>();
+        expectedOutput.add("firstBook");
         assertEquals(expectedOutput, actualOuput);
     }
 
     @Test
     void searchShouldreturnTrueIfGivenBookIsPresent() {
-        boolean actualOutput = library.search("firstBook");
+        boolean actualOutput = library.isPresent("firstBook");
         boolean expectedOutput = true;
         assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
-    void wasRemovedShouldReturnTrueIfBookWasRemovedFromLibrary() {
+   void wasRemovedShouldReturnTrueIfBookWasRemovedFromLibrary() {
         library.removeBook("firstBook", "librarian");
         boolean actualOutput = library.wasRemoved("firstBook");
         boolean expectedOutput = true;
